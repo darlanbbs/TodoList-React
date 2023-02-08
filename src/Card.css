@@ -1,0 +1,154 @@
+.containerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+h1 {
+  color: #fff;
+}
+.allCards {
+  width: 100%;
+}
+.allItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #22272f;
+  margin: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.containerCard ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 20px 100px;
+  width: 25%;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.containerCard ul img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.containerCard ul img:hover {
+  opacity: 0.5;
+}
+.container {
+  width: 99vw;
+}
+
+.container input {
+  padding: 25px 180px;
+  border-radius: 15px;
+  margin: 25px;
+}
+
+.container button {
+  background-color: gold;
+  font-weight: 700;
+  font-size: 22px;
+  width: 250px;
+  height: 60px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.container button:hover {
+  background-color: transparent;
+  color: #fff;
+  border: solid 1px #fff;
+}
+
+body {
+  background-color: #999f;
+}
+
+.containerCard ul input {
+  background-color: red;
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through #fff;
+}
+
+.checkbox-wrapper-57 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+.checkbox-wrapper-57 *,
+.checkbox-wrapper-57 ::after,
+.checkbox-wrapper-57 ::before {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-57 .container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  cursor: pointer;
+  font-size: 25px;
+  user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkbox-wrapper-57 .checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background: black;
+  border-radius: 50px;
+  transition: all 0.7s;
+  --spread: 20px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-wrapper-57 .container input:checked ~ .checkmark,
+.checkbox-wrapper-57 {
+  background: black;
+  box-shadow: -10px -10px var(--spread) 0px #5b51d8,
+    0 -10px var(--spread) 0px #833ab4, 10px -10px var(--spread) 0px #e1306c,
+    10px 0 var(--spread) 0px #fd1d1d, 10px 10px var(--spread) 0px #f77737,
+    0 10px var(--spread) 0px #fcaf45, -10px 10px var(--spread) 0px #ffdc80;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-wrapper-57 .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-wrapper-57 .container input:checked ~ .checkmark::after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-wrapper-57 .container .checkmark::after {
+  left: 0.5em;
+  top: 0.34em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid #f0f0f0;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
