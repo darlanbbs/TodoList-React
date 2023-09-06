@@ -4,10 +4,6 @@
 
 The challenge TodoListReact is a challange to improve the techniques in Reactjs.
 
-# Layout
-
-![Web 1](https://github.com/darlanbbs/imgs/blob/main/TodoList/TodoList1.png) 
-
 # Installation
 
 - Clone the repo in your terminal by clicking the green clone or download button at the top right and copying the url
